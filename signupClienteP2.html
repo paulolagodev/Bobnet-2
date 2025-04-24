@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Cliente</title>
+    <!--BOXICONS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--STYLE-->
+    <link rel="stylesheet" href="signupCliente.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form class="col col-1" action="index.php">
+            <div>
+                <button class="btn btn-2" type="submit" id="login">
+                    Início
+                </button>
+            </div>
+            <p class="featured-words">Página de <span>Registro</span></p>
+
+        </form>
+
+
+
+
+        <div>
+            <div class="btn-box">
+                <button class="btn btn-1" id="register">
+                    Passo 2
+                </button>
+            </div>
+
+        </div>
+
+        <!--Login form container-->
+        <form class="regsiter-form" method="POST" action="cadastroPasso2.php">
+            <div class="form-title">
+                <!-- <span>Registro</span> -->
+            </div>
+            <div class="form-inputs">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Telefone" name="telefone" id="idtelefone"
+                        required>
+                    <i class="bx bx-user icon"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Endereço" name="endereco" id="idendereco"
+                        required>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Numero" name="numero" id="idnumero" required>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Bairro" name="bairro" id="idbairro" required>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Complemento" name="complemento"
+                        id="idcomplemento" required>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="CEP" name="cep" id="cep" required>
+                    <i class="bx bx-lock-alt icon"></i>
+                </div>
+
+                <div class="input-box">
+                    <a href="cadastroPasso2.php">
+                        <button type="submit" class="input-submit" name="registro" id="idregistro">
+                            <span>Cadastrar</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+
+        </form>
+</body>
+
+</html>

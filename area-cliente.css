@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding-inline-start: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+}
+.icon {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #FFFFFF;
+    border-radius: 50%;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+}
+
+.icon .fab {
+    padding-top: 9px;
+}
+
+.icon:hover {
+    background-color: #FFFFFF;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 2px #5fe690;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+.main--content{
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+.header--title {
+    color: rgba(113, 99, 186, 255);
+}
+
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.user--info a{
+    text-decoration: none;
+}
+.logout--box{
+    cursor: pointer;
+    background: rgb(237, 237 ,237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.logout--box{
+    font-size: 1.2rem;
+    transition: all 0.5s ease-out;
+}
+.logout--box:hover{
+    transform: scale(1.2);
+}
+
+
+.card--container{
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.card--wrapper{
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    font-family: var(--font-card);
+}
+
+.main--title{
+    color: rgba(113, 99, 186, 255);
+    padding-bottom: 10px;
+    font-size: clamp(1.25rem, 1.5vw, 1.8rem);
+}
+.title-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 160px;
+    margin: auto;
+    background-color: white;
+}
+
+.title-cards h1 {
+    font-family: var(--font-card);
+    padding: 0 2rem;
+    font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+    font-weight: 700;
+    color: black;
+}
+
+
+.cards {
+    background-color: rgb(0, 18, 32);
+    height: 480px;
+    width: 280px;
+    border-radius: 30px;
+    padding: min(0.5rem, 10%);
+}
+
+.cards ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    margin-top: 160px;
+    text-align: left;
+}
+
+.cards h1 {
+    font-size: clamp(1.5rem, 2vw, 2.3rem);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cards li {
+
+    font-weight: 700;
+    font-size: clamp(0.7rem, 0.9vw, 1.1rem);
+    display: flex;
+    list-style: none;
+    text-align: left;
+    padding-left: 25px;
+    color: rgba(255, 255, 255, 0.614);
+}
+
+.cards span {
+    padding-right: 10px
+}
+
+.spacer {
+
+    aspect-ratio: 280/450;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer-1 {
+    background-image: url('svg/layer-1.svg');
+}
+
+.layer-2 {
+    background-image: url('svg/layer-2.svg');
+}
+
+.layer-3 {
+    background-image: url('svg/layer-3.svg');
+}
+
+.layer-4 {
+    background-image: url('svg/layer-4.svg');
+}
+
+.btn-cards {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: min(10px, 5%);
+    margin: 0px 40px 50px 40px;
+    border-radius: 15px 5px 15px 5px;
+
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 10px 10px 0px;
+    font-family: var(--font-card);
+    font-size: clamp(0.8rem, 1vw, 1.3rem);
+}
+
+.btn-cards a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-card);
+    font-weight: 600;
+    font-size: clamp(0.8rem, 1vw, 1.3rem);
+}
+
+.first {
+    background-color: blueviolet;
+}
+
+.second {
+    background-color: rgba(71, 180, 71, 0.992);
+}
+
+.third {
+    background-color: rgb(231, 67, 67);
+}
+
+.fourth {
+    background-color: rgb(255, 98, 0);
+}
+.tabular-wrapper {
+    background: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.main--title {
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Minimum width before responsive kicks in */
+}
+
+thead {
+    background: rgba(113, 99, 186, 255);
+    color: white;
+}
+
+th {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+}
+
+tbody {
+    background: #f2f2f2;
+}
+
+td {
+    padding: 12px 15px;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: white;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .tabular-wrapper {
+        padding: 0.5rem;
+    }
+    
+    table {
+        min-width: 100%;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Stacked table layout for very small screens */
+    table {
+        display: block;
+        min-width: 100%;
+    }
+    
+    thead {
+        display: none;
+    }
+    
+    tr {
+        display: block;
+        margin-bottom: 1rem;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+        border-bottom: 1px solid #eee;
+        background: #f9f9f9;
+    }
+    
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+        color: #333;
+    }
+    
+    td:last-child {
+        border-bottom: none;
+    }
+    
+    tr:nth-child(even) td {
+        background: #f2f2f2;
+    }
+}
+
+
+

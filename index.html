@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adaptação</title>
+
+    <!--Link css page-->
+    <link rel="stylesheet" href="main-page.css">
+
+    <!--Link icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!--Icone whatsapp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+     <!--Botao flutuante whatsapp-->
+     <div class="button-whatsapp">
+        <a href='https://api.whatsapp.com/send?phone=5581985960647&' target="_blank" class="icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <header>
+
+        <div class="navbar">
+            <div class="logo"><a href="#">BOBNET</a></div>
+            <ul class="links">
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+                <li><a href='https://api.whatsapp.com/send?phone=5581985960647&' target="_blank">Suporte</a></li>
+            </ul>
+            <a href="signupCliente.php" class="action-btn">Registre-se</a>
+            <a href="loginCliente.php"  class="action-btn">Login</a>
+            
+            <div class="toggle-btn" onclick="showSidebar()">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+        <div class="sidebar">
+            <li>
+
+            </li>
+            <li onclick="hideSidebar()"><a href="#">
+                    <div class="toggle-btn">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </div>
+                </a></li>
+
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Planos</a></li>
+            <li><a href="#">Vantagens</a></li>
+            <li><a href="#">Dúvidas</a></li>
+            <li><a href="#">Suporte</a></li>
+            <a href="#" class="action-btn">Registre-se</a>
+        </div>
+    </header>
+    <main>
+        <div class="container-1">
+            <div class="text-block-1">
+                <div class="line-design-1"></div>
+                <h1> Nós te oferecemos internet de altíssima qualidade
+                </h1>
+                <h4>Com a Bobnet, você tem acesso à internet de alta performance, com velocidade, confiabilidade e qualidade
+                    que fazem a diferença.
+                </h4>
+                <div class="text-block-btn">
+                    Conheça agora
+                </div>
+            </div>
+            <div class="img-1">
+                <img src="img/isometric.png" alt="">
+            </div>
+        </div>
+        <div class="title-cards" id="planos">
+            <h1>Conheça nossos planos</h1>
+        </div>
+        <div class="container-2">
+            <div class="cards spacer layer-4 " data-tilt data-tilt-glare>
+                <ul>
+                    <h1>BASIC</h1>
+                    <li><span class="material-symbols-outlined">
+                            speed
+                        </span>70 MEGA</li>
+                    <li><span class="material-symbols-outlined">
+                            wifi
+                        </span>WI-FI 5G EM COMODATO</li>
+                    <li><span class="material-symbols-outlined">
+                            router
+                        </span>INSTALAÇÃO GRÁTIS</li>
+                    <li><span class="material-symbols-outlined">
+                            tv_remote
+                        </span>IPTV STREAMING</li>
+                </ul>
+                <div class="price">
+                    <h4>Por apenas: R$50,00</h4>
+                </div>
+                <div class="btn-cards first">
+                <a href="signupCliente.php">CONTRATAR BOBNET</a>
+                </div>
+            </div>
+            <div class="cards spacer layer-3" data-tilt data-tilt-glare>
+                <ul>
+                    <h1>PRIME</h1>
+                    <li><span class="material-symbols-outlined">
+                            speed
+                        </span>100 MEGA</li>
+                    <li><span class="material-symbols-outlined">
+                            wifi
+                        </span>WI-FI 5G EM COMODATO</li>
+                    <li><span class="material-symbols-outlined">
+                            router
+                        </span>INSTALAÇÃO GRÁTIS</li>
+                    <li><span class="material-symbols-outlined">
+                            tv_remote
+                        </span>IPTV STREAMING</li>
+                </ul>
+                <div class="price">
+                    <h4>Por apenas: R$80,00</h4>
+                </div>
+                <div class="btn-cards second">
+                    <a href="signupCliente.php">CONTRATAR BOBNET</a>
+                </div>
+            </div>
+            <div class="cards spacer layer-1" data-tilt data-tilt-glare>
+                <ul>
+                    <h1>HIPER</h1>
+                    <li><span class="material-symbols-outlined">
+                            speed
+                        </span>150 MEGA</li>
+                    <li><span class="material-symbols-outlined">
+                            wifi
+                        </span>WI-FI 5G EM COMODATO</li>
+                    <li><span class="material-symbols-outlined">
+                            router
+                        </span>INSTALAÇÃO GRÁTIS</li>
+                    <li><span class="material-symbols-outlined">
+                            tv_remote
+                        </span>IPTV STREAMING</li>
+                </ul>
+                <div class="price">
+                    <h4>Por apenas: R$110,00</h4>
+                </div>
+                <div class="btn-cards third">
+                <a href="signupCliente.php">CONTRATAR BOBNET</a>
+                </div>
+            </div>
+            <div class="cards spacer layer-2" data-tilt data-tilt-glare>
+                <ul>
+                    <h1>FULL</h1>
+                    <li><span class="material-symbols-outlined">
+                            speed
+                        </span>200 MEGA</li>
+                    <li><span class="material-symbols-outlined">
+                            wifi
+                        </span>2 WI-FI 5G EM COMODATO</li>
+                    <li><span class="material-symbols-outlined">
+                            router
+                        </span>INSTALAÇÃO GRÁTIS</li>
+                    <li><span class="material-symbols-outlined">
+                            tv_remote
+                        </span>IPTV STREAMING</li>
+                </ul>
+                <div class="price">
+                    <h4>Por apenas: R$130,00</h4>
+                </div>
+                <div class="btn-cards fourth">
+                <a href="signupCliente.php">CONTRATAR BOBNET</a>
+                </div>
+            </div>
+        </div>
+        <div class="title-services" id="servicos">
+            <h1>Nossos serviços </h1>
+        </div>
+        <div class="container-3">
+            <div class="cards-2" data-tilt data-tilt-glare>
+                <div class="cards-top">
+                    <div class="cards-top-icon purple">
+                        <span class="material-symbols-outlined">
+                            engineering
+                        </span>
+                    </div>
+                </div>
+                <div class="text-block-2">
+                    <h1>Instalação grátis</h1>
+                    <h4>Comece a usar o seu novo serviço de internet sem qualquer custo adicional para a instalação.
+                        Cuidamos de tudo para que você tenha uma conexão estável e de qualidade, sem taxas extras.</h4>
+                </div>
+            </div>
+            <div class="cards-2" data-tilt data-tilt-glare>
+                <div class="cards-top">
+                    <div class="cards-top-icon green">
+                        <span class="material-symbols-outlined">
+                            wifi
+                        </span>
+                    </div>
+                </div>
+                <div class="text-block-2">
+                    <h1>Wi-Fi em comodato</h1>
+                    <h4>Esqueça a necessidade de comprar ou de se preocupar com a manutenção de um roteador. Oferecemos
+                        um aparelho Wi-Fi moderno e eficiente em comodato, garantindo excelente cobertura de sinal em
+                        toda a sua casa.</h4>
+                </div>
+            </div>
+            <div class="cards-2" data-tilt data-tilt-glare>
+                <div class="cards-top">
+                    <div class="cards-top-icon pink">
+                        <span class="material-symbols-outlined">
+                            tv
+                        </span>
+                    </div>
+                </div>
+                <div class="text-block-2">
+                    <h1>IPTV inclusa</h1>
+                    <h4>Tenha acesso a uma ampla variedade de conteúdos de TV diretamente pela internet, sem a
+                        necessidade de antenas ou cabos extras. A IPTV oferece mais flexibilidade para assistir aos seus
+                        programas favoritos quando quiser.</h4>
+                </div>
+            </div>
+            <div class="cards-2" data-tilt data-tilt-glare>
+                <div class="cards-top">
+                    <div class="cards-top-icon yellow">
+                            <span class="material-symbols-outlined">
+                                phone_in_talk
+                            </span>
+                    </div>
+                </div>
+                <div class="text-block-2">
+                    <h1>Suporte técnico</h1>
+                    <h4>Caso precise de assistência, nossa equipe técnica estará disponível para atendê-lo de segunda a
+                        sábado, das 08:00 às 17:00. Garantimos um atendimento rápido e eficiente para resolver qualquer
+                        problema.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="container-4">
+            <h1 id="duvidas">Tire suas dúvidas</h1>
+            <div class="sub-container-doubts">
+                <div class="text-block-3">
+                    <div class="toggle-button">
+                        <h2>Como contratar um plano de internet?</h2>
+                        <span class="arrow material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                    <div class="bar text-bar">
+                        <h4>Para contratar um plano de internet, basta ir à seção de planos e escolher o que lhe convém.</h4>
+                    </div>
+                </div>
+                <div class="text-block-3">
+                    <div class="toggle-button">
+                        <h2>Qual o plano ideal para minha casa?
+                        </h2>
+                        <span class="arrow material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                    <div class="bar text-bar">
+                        <h4>Há diversos fatores que influenciam na escolha do plano ideal para sua residência, como o tamanho do local e a quantidade de dispositivos que utilizam a internet. Portanto, o mais adequado é entrar em contato com nossa equipe via WhatsApp para descobrir qual é o plano ideal.
+                        </h4>
+                    </div>
+                </div>
+                <div class="text-block-3">
+                    <div class="toggle-button">
+                        <h2>Quais os benefícios de contratar um plano de internet?
+                        </h2>
+                        <span class="arrow material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                    <div class="bar text-bar">
+                        <h4>Os benefícios de contratar um plano de internet incluem instalação gratuita, Wi-Fi em comodato sem custos adicionais, IPTV inclusa com uma grande variedade de canais, além de suporte técnico especializado para garantir que você esteja sempre conectado. Esses diferenciais tornam o serviço mais prático, completo e confiável.
+                        </h4>
+                    </div>
+                </div>
+                <div class="text-block-3">
+                    <div class="toggle-button">
+                        <h2>Como efetuar o cancelamento da minha internet?
+                        </h2>
+                        <span class="arrow material-symbols-outlined">
+                            keyboard_arrow_down
+                        </span>
+                    </div>
+                    <div class="bar text-bar" id="last-text-block">
+                        <h4>Para cancelar sua internet, entre em contato com a nossa equipe via WhatsApp para fazer a solicitação e consultar as condições.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Developed by Saint group</footer>
+    <script>
+
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const bar = button.nextElementSibling;
+                const arrow = button.querySelector('.arrow');
+
+                bar.classList.toggle('active');
+                arrow.classList.toggle('rotated');
+            });
+        });
+
+
+    </script>
+    <script src="vanilla-tilt.js"></script>
+</body>
+
+</html>
